@@ -1,0 +1,17 @@
+// write a program to find sum of two numbers using function
+#include <stdio.h>
+
+int sum(int,int);
+int main(){
+    int a,b,result;
+    printf("Enter two numbers: \n");
+    scanf("%d %d",&a,&b);
+    result=sum(a,b);
+    printf("result= %d",result);
+
+}
+int sum(int x,int y){
+    int total;
+    total= x+y;
+    return total;
+}
