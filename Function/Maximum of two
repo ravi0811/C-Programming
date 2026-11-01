@@ -1,0 +1,16 @@
+// write a program that finds maximum of two numbers using function
+#include<stdio.h>
+void max();
+int main(){
+    max();
+}
+void max(){
+    int a,b;
+    printf("Enter two numbers: \n");
+    scanf("%d %d",&a,&b);
+    if (a<b){
+        printf("B is greater.");
+    }else{
+        printf("A is greater.");
+    }
+}
