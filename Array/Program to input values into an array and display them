@@ -1,0 +1,14 @@
+//WAP to input values into an array and display them
+
+#include <stdio.h>
+void main(){
+    int arr[5];
+    int i;
+    for (i=0;i<=4;i++){
+        printf("Enter a number:\n");
+        scanf("%d",&arr[i]);
+    }
+    for (i=0;i<=4;i++){
+        printf("%d ",arr[i]);
+    }
+}
