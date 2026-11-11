@@ -1,0 +1,38 @@
+//Program for multiplication of two matrices
+
+#include<stdio.h>
+#define row1 3
+#define col1 4
+#define row2 4
+#define col2 2
+void main(){
+    int mat1[row1][col1],mat2[row2][col2],r_mat[row1][col2];
+    int i,j,k;
+    printf("Enter the elements of the first matrix :\n");
+    for(i=0;i<row1;i++){
+        for(j=0;j<col1;j++){
+            scanf("%d",&mat1[i][j]);
+        }
+    }
+    printf("Enter the elements of the second matrix :\n");
+    for(i=0;i<row2;i++){
+        for(j=0;j<col2;j++){
+            scanf("%d",&mat2[i][j]);
+        }
+    }
+    printf("The resultant matrix is:\n");
+    for (i=0;i<row1;i++){
+        for(j=0;j<col2;j++){
+            r_mat[i][j]=0;
+            for(k=0;k<col1;k++){
+                r_mat[i][j]+= mat1[i][k]*mat2[k][j];
+            }
+        }
+    }
+    for (i=0;i<row1;i++){
+        for(j=0;j<col2;j++){
+            printf("%d ",r_mat[i][j]);
+        }
+        printf("\n");
+    }
+}
